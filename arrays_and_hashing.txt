@@ -1,0 +1,10 @@
+Arrays & Hashing:
+
+What is it?
+    > Arrays sotre elements in contiguous memory, allowing O(1) index access.
+    > Hashing maps keys to indicies via a hash function, enabling near-instant lookups.
+    > In Python, lists are dynamic arrays and dict/sets are hash tables.
+
+Core idea:
+    > When a brute-force solution involves nested loops O((n)^2), ask:
+        > 'Can I store something in a hash map to avoid the inner loop?
