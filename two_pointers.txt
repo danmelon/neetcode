@@ -11,3 +11,18 @@ Core Idea:
     > If too big, move right left.
 > The two pointers together 'cover' all useful pairs in one pass.
 
+Approaches
+1-- Converging pointers
+Imagine we have to establish whether a string is a palindrome:
+    > 'abcdcba'
+    > Start with one pointer at each end of the string (under a & a)
+    > compare to each other then move one place inwards.
+
+2-- Parallel pointers
+> Both pointers start at the same end and move along the array.
+> Right pointer used to find/explore new information and left used to track progress or maintain constraints.
+> Popular variation is called 'sliding window'
+
+3-- Trigger based pointers
+> Move first pointer independently until it meets an element which meets a certain condition.
+    > Then start traversing with the second pointer to find additional info, related to what the first pointer found.
