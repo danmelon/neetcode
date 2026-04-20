@@ -1,0 +1,19 @@
+Stack - Last in, first out -- great for 'most recent' problems
+
+What is it?
+> A stack is a LIFO - the last element pushed is the first popped.
+> In python, a regular list with .append() and .pop() is a perfectly efficient stack (O(1) both).
+
+Core Idea:
+> Stacks shine when we need to remember the most reccently seen thing and compare it to current thing.
+> Classic uses:
+    > bracket matching
+    > undo history
+    > evaluating expressions
+    > 'monotonic stack' for next-greater-element
+
+
+Further notes:
+
+> imagine pushing on to a stack and popping off a stack.
+> Peek is also an operation - just look at the top of the stack but don't do anything with it.
