@@ -1,0 +1,13 @@
+Two Pointers - eliminate the inner loop on sorted data
+
+What is it?
+> Use two index variables that move toward each other (or in the same direction) to avoid an O(n^2) nested loop.
+> Works best on sorted arrays or when processing from both ends.
+
+Core Idea:
+> Start with left = 0, right = len(arr) - 1.
+> Evaluate the pair.
+    > If too small, move left right.
+    > If too big, move right left.
+> The two pointers together 'cover' all useful pairs in one pass.
+
