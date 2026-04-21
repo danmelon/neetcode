@@ -1,0 +1,25 @@
+Binary Search - Halve your search space every ste
+    > > It splits the array in to two in each iteration
+
+What is it?
+> Binary search finds a target in a stored array in O(log n) by repeatedly cutting the search space in half.
+> The off-by-one errors in the loop condition are the trickiest part.
+
+Core Idea:
+> The generalised template:
+    > Find the leftmost position where a condition becomes true.
+    > This covers not just 'find x' but also 'find minimum valid x'.
+        > This is a pattern that appears in many hard problems disguised as binary search.
+
+
+
+Further notes:
+
+> Imagine we have an array.
+> We want to find what index the number 27 is at.
+> We place our pointer in the middle of the array.
+    > If it gives us, say, 14, and the array is in order from smallest to largest... we can ignore all the numbers up to the 14.
+    > With the remaining, we do the same again and just jumpt to the middle.
+        > If the middle is between two values - i.e. we only have 4 values left (middle would be between 2nd & 3rd):
+            > We take the value to the left of the middle.
+        
